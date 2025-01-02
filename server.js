@@ -42,16 +42,16 @@ app.use('/api', require('./routes/messageRouter'));
 //#endregion
 
 
+mongoose.set('strictPopulate', false);
 const URI = process.env.MONGO_URL;
-mongoose.connect(URI, {
-    useCreateIndex:true,
-    useFindAndModify:false,
-    useNewUrlParser:true,
-    useUnifiedTopology:true
-}, err => {
-    if(err) throw err;
-    console.log("Database Connected!!")
-})
+mongoose.connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    console.log('Connected to MongoDB successfully');
+    // app.listen(process.env.PORT, () => console.log(`Listening on ${PORT}`));
+  })
+  .catch((err) => {
+    console.error('Failed to connect to MongoDB', err);
+  });
 
 const port = process.env.PORT || 8000;
 http.listen(port, () => {

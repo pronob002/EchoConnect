@@ -181,6 +181,7 @@ const authCtrl = {
   },
 
   adminLogin: async (req, res) => {
+    console.log("req received");
     try {
       const { email, password } = req.body;
 

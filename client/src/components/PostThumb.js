@@ -35,10 +35,10 @@ const PostThumb = ({ posts, result }) => {
         {posts && posts.map((post) => (
           <Link to={`/post/${post._id}`} key={post._id}>
             <div className="post_thumb_display">
-              {post.images[0].url.match(/video/i)
+              {/* {post.images[0].url.match(/video/i)
                 ? videoShow(post.images[0].url, theme)
                 : imageShow(post.images[0].url, theme)
-              }
+              } */}
 
 
               <div className="post_thumb_menu">

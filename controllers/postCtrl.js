@@ -46,6 +46,7 @@ const postCtrl = {
   },
 
   getPosts: async (req, res) => {
+    console.log("ok");
     try {
       const features = new APIfeatures(
         Posts.find({
@@ -70,6 +71,7 @@ const postCtrl = {
         posts,
       });
     } catch (err) {
+      console.log(err.message);
       return res.status(500).json({ msg: err.message });
     }
   },
