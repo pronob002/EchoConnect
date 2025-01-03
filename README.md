@@ -61,20 +61,13 @@ MongoDB Express React Redux NodeJs are user in this project.
 4.  Open  [localhost:3000](http://localhost:3000/)  in the browser.
  **And application will be up and running.**
 **Here are some images of application:**
-![login page](images\login.png)
-
-![admin panel](images\admin_panel.jpeg)
-
-![profile page](images\progile_page.png)
-
-
-![new post](images\new_post.png)
-
-![dark mode](images\dark_mode.png)
-
-![notification](images\notification.jpeg)
-
-![message](images\message.png)
+![login page](./images/login.png)
+![admin panel](./images/admin_panel.jpeg)
+![profile page](./images/profile_page.png)
+![new post](./images/new_post.png)
+![dark mode](./images/dark_mode.png)
+![notification](./images/notification.jpeg)
+![message](./images/message.png)
 
 
 
